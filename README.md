@@ -13,7 +13,3 @@ It's pathogen compliant, so just drop in your bundle directory
 
 - RunAllNoseTests - runs all the nose tests in a file
 - RunFocusedNoseTests - runs the current test under the cursor (requires nose-run-line-number)
-
-## Configuration
-
-- NoseVirtualenv - the path to your virtualenv activate file e.g. ```.env/bin/actviate```
