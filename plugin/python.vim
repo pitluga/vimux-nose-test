@@ -28,7 +28,7 @@ endfunction
 
 function s:RunFocusedNoseTests()
    let virtualenv = FindVirtualEnv()
-   let line_number = getline('.')
+   let line_number = line('.')
    let file_name = @%
    call VimuxRunCommand("clear && " . virtualenv . "nosetests " . file_name . " --line " . line_number)
 endfunction
