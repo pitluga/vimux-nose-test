@@ -17,18 +17,18 @@ endfunction
 
 function s:RunAllNoseTests()
    let virtualenv = FindVirtualEnv()
-   call VimuxRunCommand("clear && " . virtualenv . "nosetests *.py")
+   call VimuxRunCommand("clear; " . virtualenv . "nosetests *.py")
 endfunction
 
 function s:RunCurrentNoseTests()
    let virtualenv = FindVirtualEnv()
    let file_name = @%
-   call VimuxRunCommand("clear && " . virtualenv . "nosetests " . file_name)
+   call VimuxRunCommand("clear; " . virtualenv . "nosetests " . file_name)
 endfunction
 
 function s:RunFocusedNoseTests()
    let virtualenv = FindVirtualEnv()
    let line_number = line('.')
    let file_name = @%
-   call VimuxRunCommand("clear && " . virtualenv . "nosetests " . file_name . " --line " . line_number)
+   call VimuxRunCommand("clear; " . virtualenv . "nosetests " . file_name . " --line " . line_number)
 endfunction
