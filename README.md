@@ -11,5 +11,5 @@ It's pathogen compliant, so just drop in your bundle directory
 
 ## Commands
 
-- RunAllNoseTests - runs all the nose tests in a file
+- RunAllNoseTests - runs all the nose tests in the directory
 - RunFocusedNoseTests - runs the current test under the cursor (requires nose-run-line-number)
