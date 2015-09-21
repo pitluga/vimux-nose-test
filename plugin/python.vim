@@ -17,7 +17,7 @@ endfunction
 
 function s:RunAllNoseTests()
    let virtualenv = FindVirtualEnv()
-   call VimuxRunCommand("clear; " . virtualenv . "nosetests *.py")
+   call VimuxRunCommand("clear; " . virtualenv . "nosetests")
 endfunction
 
 function s:RunCurrentNoseTests()
