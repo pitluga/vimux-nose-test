@@ -1,6 +1,6 @@
 " Backwards compatibility
 command! RunAllNoseTests :call RunNoseTestBuffer()
-command! RunFocusedNoseTests :call RunNoseTestFocued()
+command! RunFocusedNoseTests :call RunNoseTestFocused()
 
 command! RunNoseTest :call _run_nosetests("")
 command! RunNoseTestBuffer :call RunNoseTestBuffer()
@@ -11,7 +11,7 @@ function! RunNoseTestBuffer()
 endfunction
 
 function! RunNoseTestFocused()
-  let test_class = _nose_test_search("class")
+  let test_class = _nose_test_search("class ")
   let test_name = _nose_test_search("def test_")
 
   if test_class == "" || test_name == ""
